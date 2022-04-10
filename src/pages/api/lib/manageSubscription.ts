@@ -35,9 +35,7 @@ export async function saveSubscription(
         { data: subscriptionData }
       )
     )
-  } else {
-    console.log(subscriptionId, subscriptionData)
-  
+  } else {  
     await fauna.query(
       q.Replace(
         q.Select(
